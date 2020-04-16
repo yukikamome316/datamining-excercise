@@ -2,9 +2,34 @@
 
 
 ### Pythonのインストールについて
-基本的にはLinuxもしくはMacOSでのターミナル上でコードを実行します．Windowsの場合でも [Python公式のサイト（外部サイト）](https://www.python.org/) からPythonをダウンロードできます．また，Pythonだけではなくてデータ解析や機械学習系のモジュールなども最初から準備されている [Anaconda（外部サイト）](https://www.anaconda.com/) というものもあります．AnacondaはLinux, macOS, Windows それぞれに用意されています．
+LinuxもしくはMacOSでは，ターミナル上でPythonのコードを実行することができます．Windowsの場合でも [Python公式のサイト（外部サイト）](https://www.python.org/) からPythonをダウンロードできます．また，Pythonだけではなくてデータ解析や機械学習系のモジュールなども最初から準備されている [Anaconda（外部サイト）](https://www.anaconda.com/) というものもあります．AnacondaはLinux, macOS, Windows それぞれに用意されています．
 
 LinuxやMacOSの場合には Anacondaを使うよりは，例えばMacOSならHomebrewを使ってPythonをインストールする方が今後の拡張も考えるといいかもしれません．必要なモジュールを pip コマンドや pip3 コマンドで追加インストールするなどもできます．環境の整え方については web にたくさんの情報がありますし，インストール方法も少し変更になったりもしますので，最新の情報を各自で調べてください．
+
+この教材を進める上ではAnacondaによるPythonのインストールの方法を推奨します．
+Anacondaのインストーラは，以下のサイトからダウンロードできます．
+ただし，**Python 3.x 用のインストーラをダウンロードしてください**．
+
+Anaconda | Anaconda Individual Edition  
+https://www.anaconda.com/distribution/
+
+***
+### モジュールのインストール
+
+Pythonをインストールしたら，この教材で使用するモジュールをインストールしましょう．
+必要なモジュールは以下の通りです．
+```
+numpy
+scikit-learn
+```
+
+インストール方法はAnacondaやHomebrew，pip環境で異なります．
+各自で自分の環境に適したインストール法を調べてください．
+
+ちなみにAnacondaでのモジュールのインストールは，Anaconda Promptを立ち上げ，以下のコマンドを実行すればできます．
+```sh
+$ conda install (モジュール名)
+```
 
 ***
 ### コードのダウンロード
@@ -28,13 +53,16 @@ https://github.com/su-ohkubo-lab/pre-datamining-excercise
 ```sh
 $ python 01_print_check.py
 ```
-と入力すれば大丈夫です．結果がターミナル上に出力されます．
+と入力すれば，結果がターミナル上に出力されます．
 
 ここで自分で環境を整えて試している人向けに注意があります．pythonには「2系」と「3系」があり，ここでは「3系」を念頭に置いています．環境によっては「3系」であることを明示するために，
 ```sh
 $ python3 01_print_check.py
 ```
 のように `python3` コマンドを使う必要があるかもしれません．自分が使用している環境でpythonをどのように実行しているかを知っておく必要があるでしょう．web上には情報があると思いますので，チェック方法を検索して，調べてみてください．
+
+またAnacondaを利用している人は，Anaconda promptを利用するのがいいでしょう．Anaconda promptを立ち上げ，
+そこに上のコマンドを入力すれば，結果がAnaconda prompt上に出力されます．
 
 それでは，課題を実行していきましょう．事前学習用の教材に戻ったり，webで調べたりしながら，自分のペースで進めてください．すべての課題をこなす必要はありませんし，課題以外でも自分で挑戦したいことがあればどんどん進めてください．
 
