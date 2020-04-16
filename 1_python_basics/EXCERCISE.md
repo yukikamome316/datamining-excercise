@@ -29,7 +29,7 @@ numpy
 scikit-learn
 ```
 
-インストールの方法はAnacondaやHomebrew，pip環境で異なります．
+インストールの方法はAnacondaやHomebrew，pip等で異なります．
 各自で自分の環境に適したインストール法を調べてください．
 
 ちなみにAnacondaでのモジュールのインストールは，Anaconda Promptを立ち上げ，以下のコマンドを実行すればできます．
