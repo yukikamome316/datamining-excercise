@@ -131,7 +131,7 @@ Anaconda promptを立ち上げ，そこに上のコマンドを入力すれば�
 4. （発展）numpyで可能な様々な演算を調べて試す（逆行列，行列式，固有値など）．
 
 ***
-### 課題 1.5
+#### 課題 1.5
 1. コード [`05_plot_check.py`](./05_plot_check.py) を実行して結果を確認する．
 1. `numpy arange` をwebで検索する．英語のマニュアルが検索結果のどこかにあるはずなので，記述を見る（見つからなければ [ここ（外部リンク）](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html)）．英語をできるだけ読む．
 1. `matplotlib color` などで調べて，プロットの色を変える．
