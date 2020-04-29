@@ -18,7 +18,7 @@ Anacondaのインストーラは，以下のサイトからダウンロードで
 ただし，**Python 3.x 用のインストーラをダウンロードしましょう**．
 
 Anaconda | Anaconda Individual Edition  
-https://www.anaconda.com/distribution/
+https://www.anaconda.com/products/individual#Downloads
 
 ***
 ### コードのダウンロード
