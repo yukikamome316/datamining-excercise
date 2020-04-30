@@ -37,16 +37,15 @@ https://github.com/su-ohkubo-lab/pre-datamining-excercise
 ***
 ### モジュールのインストール
 
-Pythonをインストールしたら，この教材で使用するモジュールをインストールしましょう．
-必要なモジュールは以下の通りです．
+Anacondaを利用していない人は，以下の必要なモジュールをインストールしてください．
 ```
 numpy
 scikit-learn
+matplotlib
 ```
 
 インストールの方法はHomebrew，pip等で異なります．
 各自で自分の環境に適したインストール法を調べてください．
-ちなみにAnacondaを使う場合，上記のモジュールはすでにインストールされているはずです．
 
 ***
 ### コードの実行
