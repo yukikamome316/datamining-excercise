@@ -2,6 +2,8 @@
 
 埼玉大学工学部情報工学科 開講授業『データマイニング演習』教材
 
+Original：https://github.com/su-ohkubo-lab/datamining-excercise
+
 ***
 
 ### はじめに
