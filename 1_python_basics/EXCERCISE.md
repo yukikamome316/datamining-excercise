@@ -27,7 +27,7 @@ https://colab.research.google.com/
 
 Colaboratoryを使うにあたり，事前の準備を行いましょう．
 
-1. Googleアカウントがなければ作成し，ログインしてください．
+1. Googleにログインしてください．Googleアカウントがなければ作成してください．
 2. 新しいPythonコードは，[Colaboratory](https://colab.research.google.com/)にアクセスし，ポップアップウィンドウの「ノートを新規作成する」を押すか，Colaboratoryにある「ファイル」タブ→「ノートブイックを新規作成」を押すことで作成できます．
 4. 新しいPythonコードとして「Untitled0.ipynb」が生成されます．このコードはGoogle Driveに自動で保存されます．
 5. ファイル名を好きに変更してください．
