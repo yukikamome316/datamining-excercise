@@ -1,24 +1,38 @@
 # Pythonの基本的な使い方：演習課題
 
 
-### Pythonのインストールについて
+### 開発環境の整備
 
-**この教材ではAnacondaによるPython3系のインストールを推奨します．**
+#### Pythonコードの実行方法
 
-LinuxもしくはMacOSでは，ターミナル上でPythonのコードを実行することができます．Windowsの場合でも [Python公式のサイト（外部サイト）](https://www.python.org/) からPythonをダウンロードできます．また，Pythonだけではなくてデータ解析や機械学習系のモジュールなども最初から準備されている [Anaconda（外部サイト）](https://www.anaconda.com/) というものもあります．AnacondaはLinux, macOS, Windows それぞれに用意されています．
+Pythonのコードを実行するには，大きく分けて２通りのやり方があります．
+１つは，ローカル環境にPythonインタプリタを自身で用意して実行する方法です．２つ目は，Webブラウザを使ってオンライン上で実行する方法です．
 
-Pythonには「2系(バージョンが2.xで表されるもの)」と「3系(バージョンが3.xで表されるもの)」があります．
-「2系」と「3系」で使われるコードやモジュールには，基本的に互換性がありません．
-最近のコードのほとんどが「3系」を元に書かれていることを考えると，「3系」をインストールするとよいでしょう．
+前者は，ローカル環境に[Pythonインタプリタ](https://www.python.org/)や[Anaconda（外部サイト）](https://www.anaconda.com/) をインストールして実行する方法です．
+環境構築に手間がかかりますが，設定次第では非常に快適な開発環境を構築できます．
 
-LinuxやMacOSの場合には Anacondaを使うよりは，例えばMacOSならHomebrewを使ってPythonをインストールする方が今後の拡張も考えるといいかもしれません．必要なモジュールを pip コマンドや pip3 コマンドで追加インストールするなどもできます．環境の整え方については web にたくさんの情報がありますし，インストール方法も少し変更になったりもしますので，最新の情報を各自で調べてください．
+後者においては，Googleが機械学習の研究・教育用に提供するColaboratoryが有名です．
+ColaboratoryはJupyter Notebookライクな統合開発環境です．
+Webブラウザ上でPythonコードを実行できます．
+Googleが持つ強力な計算機リソースを無料で使用できるため(いくつか制限はありますが)，学生や研究者にとても人気なサービスです．
+Numpyやscikit-learnなど主要なモジュールは既にインストールされているため，手軽に機械学習の勉強を始めることができます．
+また作成したコードはGoogle Driveに保存できるため，Webブラウザが使える環境であればどこでも開発できるという強みもあります．
 
-この教材を進める上ではAnacondaによるPythonのインストールの方法を推奨します．
-Anacondaのインストーラは，以下のサイトからダウンロードできます．
-ただし，**Python 3.x 用のインストーラをダウンロードしましょう**．
+この教材では，後者のColaboratoryを使って学習を進めます．
 
-Anaconda | Anaconda Individual Edition  
-https://www.anaconda.com/products/individual#Downloads
+Google Colaboratory  
+https://colab.research.google.com/
+
+#### 事前準備
+
+Colaboratoryを使うにあたり，事前の準備を行いましょう．
+
+1. Googleアカウントがなければ作成し，ログインしてください．
+2. 新しいPythonコードは，[Colaboratory](https://colab.research.google.com/)にアクセスし，ポップアップウィンドウの「ノートを新規作成する」を押すか，Colaboratoryにある「ファイル」タブ→「ノートブイックを新規作成」を押すことで作成できます．
+4. 新しいPythonコードとして「Untitled0.ipynb」が生成されます．このコードはGoogle Driveに自動で保存されます．
+5. ファイル名を好きに変更してください．
+6. 画面右上にある「接続」ボタンを押すと，Googleのクラウド計算機と接続し，使用することができるようになります．
+7. コードを書いた後，「セルを実行」ボタンを押すと実行できます．
 
 ***
 ### コードのダウンロード
