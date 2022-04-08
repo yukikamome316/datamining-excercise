@@ -23,9 +23,9 @@ Numpyやscikit-learnなど主要なモジュールは既にインストールさ
 Google Colaboratory  
 https://colab.research.google.com/
 
-#### Colaboratoryを使うための準備
+#### Colaboratoryを使うには
 
-Colaboratoryを使うための準備について説明します．
+Colaboratoryを使うための最低限の手順について説明します．
 
 1. Googleにログインしてください．Googleアカウントがなければ作成してください．
 2. 新しいPythonコードを作成してみましょう．コードを作成するには，[Colaboratory](https://colab.research.google.com/)にアクセスし，ポップアップウィンドウの`ノートを新規作成する`を押すか，Colaboratoryにある`ファイル`タブ > 「ノートブイックを新規作成」を押します．
