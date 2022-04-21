@@ -141,7 +141,7 @@ matplotlib
 1. `numpy arange` をwebで検索する．英語のマニュアルが検索結果のどこかにあるはずなので，記述を見る（見つからなければ [ここ（外部リンク）](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html)）．英語をできるだけ読む．
 1. `matplotlib color` などで調べて，プロットの色を変える．
 1. `pyplot axis label` などで調べて，x軸に `time`，y軸に `value` とラベルをつける．
-1. eps形式でファイルを保存する（方法を調べること．レポート作成で tex を使う場合に必要）．実際に図を表示して確認する．
+1. png形式でファイルを保存する（方法を調べること．レポート作成で tex を使う場合に必要）．実際に図を表示して確認する．
 1. （発展）`def` で定義された関数を変えたり，描画する範囲を変えたりして，様々なプロットをしてみる．
 
 ***
