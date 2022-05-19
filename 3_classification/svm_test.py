@@ -1,4 +1,5 @@
-from sklearn.externals import joblib
+from sklearn.externals import joblib # if not Golge Colab
+# import joblib # if Google Colab
 import numpy as np
 
 with open("iris_test.csv", 'r') as file:
