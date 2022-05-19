@@ -1,5 +1,5 @@
 from sklearn import svm
-from sklearn.externals import joblib
+from sklearn.externals import joblib # if not Goolge Colab
 # import joblib # if Google Colab
 import numpy as np
 
