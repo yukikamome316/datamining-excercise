@@ -17,7 +17,7 @@
 1. （発展）混合ガウスモデルについて，等高線もプロットできるようにする．
 
     > ヒント：`matplotlib.mlab` の `bivariate_normal` という関数と，`matplotlib.pyplot` の `contour` という関数を使うと簡単かもしれない．
-    > あるいは，`scipy.stats`の`.multivariate_normal`と`scipy.stats.norm`の`pdf`を組み合わせて使うといいかもしれない．
+    > あるいは，`scipy.stats`の`multivariate_normal`と`scipy.stats.norm`の`pdf`を組み合わせて使うといいかもしれない．
     > 調べてみること．
 
 1. （発展）*k*-平均法において，どのようなコスト関数を考えているのか，そのコスト関数からどのようにアルゴリズムを導出するのか，数理的な側面から調べ，説明できるようにする．
