@@ -62,7 +62,7 @@
 多くの解析アルゴリズムは，入力する特徴量として文字形式を受け付けません．ラベルが文字で与えられる場合，数値に変換しましょう．
 ラベルの文字を数値に変換するサンプルコードを次のリンクに設置しています．役立ててください．
 
-[Label2Value.ipynb](https://colab.research.google.com/drive/16CvLs6KxtS2RCC5rOLaTCB9DyF1gay38?usp=sharing)
+[Label2Value.ipynb](https://github.com/YosukeSugiura/datamining-excercise/blob/master/5_excercise/Label2Value.ipynb)
 
 #### 2.  空白(Null)を含む行(レコード)は削除する．
 
