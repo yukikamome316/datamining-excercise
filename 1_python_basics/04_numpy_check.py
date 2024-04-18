@@ -17,8 +17,24 @@ print(mat[:,1])
 print("**mat.T -> 転置**")
 print(mat.T)
 
+print("課題1.4.2")
+print(mat[:, [1, 2]])
+
+output_list = [10.1, 10.2, 10.3]
+output = np.array(output_list)
+output = output.T
+
+print("課題1.4.3")
+print(np.c_[mat, output])
+
 data1 = np.array([[1.1,2.2],[3.3,4.4]])
 data2 = np.array([[5.5,6.6],[7.7,8.8]])
+
+print("逆行列")
+print(np.linalg.inv(mat))
+
+print("行列式")
+print(np.linalg.det(mat))
 
 print("**data1**")
 print(data1)
