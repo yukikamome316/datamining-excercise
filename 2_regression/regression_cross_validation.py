@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn import linear_model
 from sklearn.metrics import r2_score
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import StandardScaler
 
 with open("boston.csv", 'r') as file:
@@ -11,16 +11,11 @@ with open("boston.csv", 'r') as file:
 scaler = StandardScaler()
 scaler.fit(data)
 
-inputs = data[:, [0] + list(range(2, data.shape[1]))]
-outputs = data[:,1]
-
-X_train, X_test, y_train, y_test = train_test_split(inputs, outputs)
+X = data[:, [0] + list(range(2, data.shape[1]))]
+y = data[:,1]
 
 regr = linear_model.LinearRegression(fit_intercept=True)
-regr.fit(X_train, y_train)
+regr.fit(X, y)
 
-print('Coefficients: \n', regr.coef_)
-
-pred = regr.predict(X_test)
-
-print('R2 score: ', r2_score(y_test, pred))
+scores = cross_val_score(regr, X, y, cv=5, scoring='r2')
+print('R2 score: ', scores)
