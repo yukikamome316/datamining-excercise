@@ -10,11 +10,12 @@ with open("boston.csv", 'r') as file:
     line = file.readline()
     data = np.loadtxt(file, delimiter=',')
 
-scaler = StandardScaler()
-scaler.fit(data)
 
 inputs = data[:,:-2]
 outputs = data[:,-1]
+
+scaler = StandardScaler()
+scaler.fit(inputs)
 
 X_train, X_test, y_train, y_test = train_test_split(inputs, outputs, random_state=0)
 
