@@ -14,7 +14,7 @@ scaler.fit(data)
 inputs = data[:, [0] + list(range(2, data.shape[1]))]
 outputs = data[:,1]
 
-X_train, X_test, y_train, y_test = train_test_split(inputs, outputs)
+X_train, X_test, y_train, y_test = train_test_split(inputs, outputs, random_state=42)
 
 regr = linear_model.LinearRegression(fit_intercept=True)
 regr.fit(X_train, y_train)
