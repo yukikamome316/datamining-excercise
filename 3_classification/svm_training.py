@@ -1,6 +1,6 @@
 from sklearn import svm
-from sklearn.externals import joblib # if not Goolge Colab
-# import joblib # if Google Colab
+# from sklearn.externals import joblib # if not Goolge Colab
+import joblib # if Google Colab
 import numpy as np
 
 with open("iris_training.csv", 'r') as file:

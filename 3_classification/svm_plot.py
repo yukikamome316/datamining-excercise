@@ -1,5 +1,5 @@
-from sklearn.externals import joblib # if not Google Colab
-# import joblib # if Google Colab
+# from sklearn.externals import joblib # if not Google Colab
+import joblib # if Google Colab
 import numpy as np
 import matplotlib.pyplot as plt
 
