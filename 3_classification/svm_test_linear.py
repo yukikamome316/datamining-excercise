@@ -11,7 +11,7 @@ inputs = inputs[(data[:,4] == 0) | (data[:,4] == 1)]
 labels = data[:,4]
 labels = labels[(labels == 0) | (labels == 1)]
 
-clf = joblib.load('svm.pkl')
+clf = joblib.load('linear_svm.pkl')
 results = clf.predict(inputs)
 
 print("Answer : {0}".format(labels))

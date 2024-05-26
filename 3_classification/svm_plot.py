@@ -7,10 +7,12 @@ with open("iris_training.csv", 'r') as file:
     line = file.readline()
     data = np.loadtxt(file, delimiter=',', usecols=(0,1,2,3,4))
 
-inputs = data[:,0:2] 
+inputs = data[:,0:4]
+inputs = inputs[(data[:,4] == 0) | (data[:,4] == 1)] 
 labels = data[:,4]
+labels = labels[(labels == 0) | (labels == 1)]
 
-clf = joblib.load('linear_svm.pkl')
+clf = joblib.load('svm.pkl')
 
 mycolors = ['r', 'b']
 for i, mycolor in enumerate(mycolors):
@@ -27,4 +29,3 @@ z_grids = clf.predict(np.c_[x_grids.ravel(), y_grids.ravel()])
 z_grids = z_grids.reshape(x_grids.shape)
 plt.contourf(x_grids, y_grids, z_grids, cmap=plt.cm.bone, alpha=0.2)
 plt.show()
-
